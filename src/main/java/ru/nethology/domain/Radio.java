@@ -30,9 +30,10 @@ public class Radio {
         if (radioStationNumber < 9) {
             radioStationNumber = radioStationNumber + 1;
         }
-        if (radioStationNumber == 9) {
+        else {
             radioStationNumber = 0;
         }
+
     }
 
     public void previousStation() {
