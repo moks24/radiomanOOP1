@@ -59,9 +59,9 @@ class RadioTest {
     @Test
     public void shouldIncreaseTheVolume() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(7);
+        radio.setCurrentVolume(9);
         radio.increaseVolume();
-        assertEquals(8, radio.getCurrentVolume());
+        assertEquals(10, radio.getCurrentVolume());
 
     }
 
@@ -77,9 +77,9 @@ class RadioTest {
     @Test
     public void shouldDownVolume() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(3);
+        radio.setCurrentVolume(1);
         radio.volumeDown();
-        assertEquals(2, radio.getCurrentVolume());
+        assertEquals(0, radio.getCurrentVolume());
 
     }
 
@@ -95,9 +95,9 @@ class RadioTest {
     @Test
     public void shouldGoToThePreviousStation() {
         Radio radio = new Radio();
-        radio.setRadioStationNumber(2);
+        radio.setRadioStationNumber(1);
         radio.previousStation();
-        assertEquals(1, radio.getRadioStationNumber());
+        assertEquals(0, radio.getRadioStationNumber());
 
     }
 
